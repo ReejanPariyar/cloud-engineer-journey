@@ -19,3 +19,9 @@ jobs:
 
       - name: Check Python syntax
         run: python -m py_compile aws-exercises/01-boto3-basics/*.py
+      
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest testing-exercises/
